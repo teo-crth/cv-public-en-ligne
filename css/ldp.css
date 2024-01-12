@@ -241,10 +241,12 @@ article h2{
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 2rem;
+}
+.img-marron-fleche { 
     opacity: 0.8;
 }
 
-.btn-marron-fleche:hover {
+.img-marron-fleche:hover {
     opacity: 1;
 }
 
