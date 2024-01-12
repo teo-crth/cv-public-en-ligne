@@ -209,9 +209,9 @@ article h2{
 
 @media (min-device-width: 768px) {
 
-    .contener-pero-btn {
-        margin-top: 1rem;
-    }
+.contener-pero-btn {
+    margin-top: 1rem;
+}
 
 .perso-complet{
     width: 35%;
@@ -241,6 +241,11 @@ article h2{
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.btn-marron-fleche:hover {
+    opacity: 1;
 }
 
 .btn-marron-fleche img {
