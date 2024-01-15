@@ -21,12 +21,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     
 // CACHER LE BOUTON POUR REMONTER EN HAUT JUSQU'AU SCROLL DE LA PAGE
-    scrollToTarget(element) {
-        document.querySelector(element).scrollIntoView({
-            behavior: 'smooth'
-        });
-    },
-
 
     scrollAction() { window.onscroll = function() {
             const BTN_REMONTER = document.getElementById("up");
@@ -37,8 +31,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 } else {
                     BTN_REMONTER.classList.add('btn-hidden');
                 }
-
-                APP.scrollToTarget("#navbar");
         }
     },
 
