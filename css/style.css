@@ -183,7 +183,9 @@ article h2{
     text-align: center;
 }
 
-.btn-marron-fleche img {
+.img-marron-fleche  {
+    opacity: 0.9;
+    width: 70%;
     width: 50%;
     margin-top: 1rem;
 }
@@ -228,15 +230,11 @@ article h2{
 
 .img-marron-fleche  {
     opacity: 0.9;
+    width: 70%;
 }
 
 .img-marron-fleche:hover {
     opacity: 1;
-}
-
-
-.btn-marron-fleche img {
-    width: 70%;
 }
 
 }
@@ -843,10 +841,7 @@ nav a{
     width: 3rem;
     height: 3rem;
     background-color: black;
-    font-size:2rem;
-    font-weight: 200;
     border-radius: 10rem;
-    color: white;
     margin: 1rem;
     align-items: center;
     justify-content: center;
@@ -857,12 +852,18 @@ nav a{
     right: 1vw;
     opacity: 0.4;
     cursor: pointer;
+    text-decoration: none;
 
 }
 
-.remonter-en-haut a {
+.remonter-en-haut p{ 
+    display: flex;
+    font-size: 4rem;
+    font-weight: 200;
     color: white;
-    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
 }
 
 .btn-hidden {
