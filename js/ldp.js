@@ -21,7 +21,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     
 // CACHER LE BOUTON POUR REMONTER EN HAUT JUSQU'AU SCROLL DE LA PAGE
-
     scrollAction() { window.onscroll = function() {
             const BTN_REMONTER = document.getElementById("up");
             let distanceScrolled = document.documentElement.scrollTop; 
@@ -31,6 +30,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 } else {
                     BTN_REMONTER.classList.add('btn-hidden');
                 }
+        }
+    },
+
+    moveUpBtn() {
+        document.getElementById("up").addEventListener("click", function() {
+            scrollToTop();
+        });
+        
+        document.getElementById("up").addEventListener("touchend", function() {
+            scrollToTop();
+        });
+        
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Pour les navigateurs anciens
+            document.documentElement.scrollTop = 0; // Pour les navigateurs modernes
         }
     },
 
@@ -135,6 +149,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         this.BurgerMenu();
         this.scrollAction();
         this.Age(new Date(1994, 6, 23));
+        this.moveUpBtn();
         this.cookies();
     }
 
