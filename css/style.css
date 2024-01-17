@@ -9,6 +9,15 @@ html *{
 /* Taille de texte globale */
 html {font-size: 100%;}
 body {font-size: .85em;}
+
+.section__h2 {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /* FIN Taille de texte globale */
 
 header{
@@ -21,13 +30,8 @@ header{
 
 @media (min-width: 768px){
 
-    h2{
-        font-size: 2em;
-        margin-bottom: 0.5em;
-        margin-top: 0.5em;
-    }
     
-    .cart h3{
+    .card h3{
         font-size: 2em;
         margin-bottom: 0.5em;
         margin-top: 0.5em;
@@ -43,7 +47,7 @@ display: flex;
 flex-wrap: wrap;
 }
 
-.haut-cart {
+.cards__card-top {
     border-radius: 4px;
 }
 
@@ -56,7 +60,7 @@ flex-wrap: wrap;
     gap: 15px;
 }
 
-.logos-competences{
+.skill-section__container-logos{
     width:100%;
     display: flex;
     flex-wrap: wrap;
@@ -97,13 +101,6 @@ article h2{
     text-align: center;
 }
 /**********************FIN MISE EN PAGE**********************/
-
-/**********************CORPS DES PAGES*********************************/
-.margin3{
-    padding-left:2%;
-    padding-right:2%;
-    padding-top:2%;
-}
 
 /**************************************Section Accueil***********************************/   
 
@@ -194,9 +191,9 @@ article h2{
 
 @media (min-width: 768px) {
 
-    .contener-pero-btn {
-        margin-top: 1rem;
-    }
+.contener-pero-btn {
+    margin-top: 1rem;
+}
 
 .perso-complet{
     width: 35%;
@@ -250,22 +247,14 @@ article h2{
     padding-bottom: 100px;
 }
 
-
-.h2-formation-section h2 {
+.formation-section .section__h2 {
     color: white;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 50px auto;  
-    font-size: 1.8rem;  
-    padding-top: 20px;
 }
 
 
 /***************CARTES******************/
 
-.cart{
+.card{
     max-width: 20rem;
     text-align: center;
     border-radius: 5px;
@@ -273,11 +262,11 @@ article h2{
     margin: 0 1rem;
 }
 
-.cart h2 {
+.card h2 {
     font-size: 2rem;
 }
 
-.cart:hover {
+.card:hover {
     animation: pulse;
     animation-duration: 2s;
 }
@@ -307,7 +296,7 @@ article h2{
 }
 
 
-div.allcarts {
+div.container-allcards {
     
     display: flex;
     flex-wrap: wrap;
@@ -338,14 +327,14 @@ color: #000000;
 letter-spacing: 4px;
 }
 
-.cart p {
+.card p {
     font-size: 1rem;
     text-align: justify;
     margin: 1rem;
 
 }
 
-.h3carts{
+.cards__formation-date{
     font-size: 2rem;
     margin-top: 1.5rem;
     color: white;
@@ -353,14 +342,13 @@ letter-spacing: 4px;
     text-transform: uppercase;
 }
 
-.bas-cart-0, .bas-cart-1, .bas-cart-2, .bas-cart-3 {
+.cards__card-bottom {
     border-radius: 5px;
     box-shadow: 0 5px 10px black;
 }
 
-.textes-bas-cart {
+.cards__card-bottom p {
     padding: 0 0.7rem 0.7rem 0.7rem;
-    
 }
 
 .cartimg {
@@ -368,11 +356,7 @@ letter-spacing: 4px;
     border-radius: 5px 5px 0 0;
 }
 
-.cart hr{
-    margin-bottom: 1rem;
-}
-
-.haut-cart{
+.cards__card-top {
     border-radius: 5px 5px 0 0;
     background-color: white;
 }
@@ -380,23 +364,6 @@ letter-spacing: 4px;
 /** MEDIA QUERIES FORMAT DESKTOP**/
 
 @media (min-width: 768px) {
-.formation-section {
-    background-color: #000000;
-    width: 100%;
-    padding-bottom: 100px;
-}
-
-
-.h2-formation-section h2 {
-    color: white;
-    text-align: center;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 50px;
-    font-size: 2.5rem;
-    
-}
 
 .nomSpeEdhec {
     color: #a51f34;
@@ -425,71 +392,33 @@ letter-spacing: 4px;
 
 /*******************************COMPETENCES SECTION*********/
 
-.competences-section {
+.skill-section {
     width: 100%;
     background-color: #F0F0F0;
 }
 
-.div-h2-competences-section{
-    width: 100%;
-}
-
-.h2-comptences-section {
-    text-align: center;
+.skill-section .section__h2 {
     color: black;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 50px;
-    font-size: 2rem;
 }
 
-.competences-section h3 {
+.skill-ection__h3 {
     font-size: 1.5em;
+    margin-top: 1rem;
 }
-
-/** MEDIA QUERIES FORMAT DESKTOP**/
-
-@media (min-width: 768px) {
-.competences-section {
-    width: 100%;
-    background-color: #F0F0F0;
-}
-
-.div-h2-competences-section{
-    width: 100%;
-}
-
-.h2-comptences-section {
-    color: black;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 3rem;
-    font-size: 2.5rem;
-}
-}
-
-
 
 
 /***************CONTACT SECTION*******************/
 .contact-section {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 4rem;
 }
 
-.h2-section-contact {
+#contact {
     color: black;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 30px;
-    font-size: 1.5rem;
-    text-align: center;
 }
 
 
@@ -526,7 +455,7 @@ textarea {
 
 
 form{
-    width:100%;
+    width:90%;
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 2px;
@@ -599,12 +528,8 @@ button:hover {
         width: 100%;
     }
 
-form{
-    width:100%;
-    text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 0.15rem;
-    box-shadow: 0 0.2rem 0.2rem 0.2rem lightgray;
+form {
+    width:50%;
 }
 
 .champsForm{
@@ -646,15 +571,6 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.h2-section-contact {
-    color: black;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 50px;
-    font-size: 2.5rem;    
 }
 
 button:hover {
@@ -888,7 +804,7 @@ nav a{
 }
 
 /*****************************IMAGE*********************************/
-.widthlogo{
+.skill-img{
     width: 100%;
     text-align: center;
     justify-content: space-evenly;
