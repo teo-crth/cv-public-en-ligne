@@ -144,6 +144,63 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     },
 
+    // IMAGES LOGO COMPETENCES
+    // FAIRE FONCTION AVEC BOUCLE FOR OF AJOUTER LES CLASS, LE LOADING LAZY, LA BALISE IMAGE ET LA DIV
+    
+
+    arrayLogo: [
+       { 
+        logo: "Javascript",
+        src: "./img/js_400x400.webp",
+        alt: "logo Javascript",
+        },
+        { 
+        logo: "HTML",
+        url: "./img/html5_400.webp",
+        alt: "logo html5",
+        },
+        { 
+        logo: "CSS",
+        url: "./img/css_400x400.webp",
+        alt: "logo CSS",
+        },
+        {        
+        logo: "prestashop",
+        url: "./img/presta_400.webp",
+        alt: "logo prestashop",
+        },
+        {        
+            logo: "wordpress",
+            url: "./img/wordpress_400.webp",
+            alt: "logo wordpress",
+        },
+        {        
+            logo: "search console",
+            url: "./img/searchconsole_400.webp",
+            alt: "logo search console",
+        },
+        {        
+            logo: "google tag manager",
+            url: "./img/tagmanager_400.webp",
+            alt: "logo google tag manager",
+        },
+        {        
+            logo: "google ads",
+            url: "./img/gads_400.webp",
+            alt: "logo google ads",
+        },
+        {        
+            logo: "google analytics",
+            url: "./img/ga_400.webp",
+            alt: "logo google analytics",
+        },
+        {        
+            logo: "photoshop",
+            url: "./img/psd_400px.webp",
+            alt: "logo photoshop",
+        },
+    ],
+
     init() {
         this.menuHidden();
         this.BurgerMenu();
