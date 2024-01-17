@@ -422,7 +422,7 @@ letter-spacing: 4px;
 }
 
 
-label{
+#contact-form label{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -432,48 +432,48 @@ label{
 
 }
 
-legend {
-    font-size: 1rem;
+#contact-form legend {
+    font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: bold;
     color: black;
 }
 
-fieldset {
+#contact-form fieldset {
     border: none;
     
 }
 
-input {
+#contact-form input {
     width: 100%;
-    border: none;
+    border: 1px solid black;
 }
 
-textarea {
+#contact-form textarea {
     width: 100%;
 }
 
 
-form{
-    width:90%;
+#contact-form {
+    width: 90%;
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 2px;
-    font-size: 1em;
+    font-size: 0.8rem;
     border-radius: 0.2rem;
     padding: 0.8rem;
     box-shadow: 0 0.2rem 0.2rem 0.2rem lightgray;
 }
 
 .champsForm{
-    margin-top: 0.7em;
+    margin-top: 0.5rem;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
     letter-spacing:1px;
-    padding: 6px;
-    font-size: 1.2em;
+    padding: 0.4rem;
+    font-size: 0.7rem;
     background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
-    border: 0.02rem solid black;
+    border: 1px solid black;
 }
     
 .buttonContact{
@@ -503,59 +503,34 @@ button:hover {
 /** MEDIA QUERIES FORMAT DESKTOP**/
 
 @media (min-width: 768px) {
-    label{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: left;
-        margin-top: 12px;
-        font-size: 1.2rem;
+    #contact-form label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    margin-top: 12px;
+    font-size: 1.2rem;
+
+}
+
+#contact-form legend {
+    font-size: 1.5rem;
     
-    }
-    
-    legend {
-        font-size: 1.5rem;
-        
-    }
+}
 
-    
-
-    input {
-        width: 100%;
-    }
-
-    textarea {
-        width: 100%;
-    }
-
-form {
+#contact-form {
     width:50%;
 }
 
 .champsForm{
     width: 100%;
-    margin-top: 0.7em;
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 0.05rem;
-    padding: 0.5rem;
     background-color: #eee;
-    border: 0.02rem solid black;
-    font-weight: 200;
 }
 
 .buttonContact{
     width: 50%;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
-    border-radius: 6px;
     padding: 0.5rem;
     margin-top: 0.5rem;
-    cursor: pointer;
     font-size: 1.2rem;
 
 }
@@ -565,23 +540,7 @@ form {
     justify-content: center;
     align-items: center;
 }
-
-.contact-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
-button:hover {
-    background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
-    transform: translate(0,-3px);
-}}
-
-[placeholder] {
-    font-size: 1.2rem;
-}
-
 
 /*************************************FIN FORM CONTACT********************************/
 
