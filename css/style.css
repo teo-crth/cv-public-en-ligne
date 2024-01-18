@@ -3,11 +3,12 @@
 html *{
     box-sizing:border-box;
     margin: 0;
+    
 }
 /********MISE EN PAGE*******************/
 
 /* Taille de texte globale */
-html {font-size: 100%;}
+html {font-size: 100%; scroll-behavior: smooth;}
 body {font-size: .85em;}
 
 .section__h2 {
