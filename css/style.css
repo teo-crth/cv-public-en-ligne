@@ -7,7 +7,7 @@ html *{
 }
 /********MISE EN PAGE*******************/
 
-/* Taille de texte globale */
+/* Elements Globaux */
 html {font-size: 100%; scroll-behavior: smooth;}
 body {font-size: .85em;}
 
@@ -19,24 +19,11 @@ body {font-size: .85em;}
     text-transform: uppercase;
     font-weight: bold;
 }
-/* FIN Taille de texte globale */
 
 header{
     width: 100%;
     position: absolute;
     z-index: 10;
-}
-
-/** MEDIA QUERIES FORMAT DESKTOP**/
-
-@media (min-width: 768px){
-
-    
-    .card h3{
-        font-size: 2em;
-        margin-bottom: 0.5em;
-        margin-top: 0.5em;
-    }
 }
 
 body{
@@ -68,39 +55,14 @@ flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.flex{
-    display: flex;
-}
-
-.cliquezdessus{
-    display: block; 
-    padding: 20px; 
-    background-color: rgba(255,0,0,0.8);
-    transition: all 0.5s ease-in-out;
-
-}
-
-.cliquezdessus:hover{
-    background-color: rgba(255,255,0,0.8);
-    cursor: pointer;
-}
-
-.activer{
-    background-color: rgba(0,0,255,1) !important; 
-}
-
-.backgroundlightseagreen{
-    background-color: lightseagreen;
-}
-
 article h2{
     margin: 1.5rem 1rem;
 }
 
-.contener-competences {
-    margin: 20px 20px;
-    text-align: center;
-}
+
+/* FIN Elements Globaux */
+
+
 /**********************FIN MISE EN PAGE**********************/
 
 /**************************************Section Accueil***********************************/   
@@ -125,11 +87,6 @@ article h2{
     align-self: center;
     justify-content: center;
     margin: 0 auto;
-}
-
-.section-presentation h3 {
-    color: white;
-    font-size: 2em;
 }
 
 .section-presentation h2 {
@@ -161,7 +118,7 @@ article h2{
     justify-content: center;
     font-size: 1.2em;
     margin: 0;
-    }
+}
 
 #h3Header {
         display: flex;
@@ -169,9 +126,10 @@ article h2{
         text-align: center;
         width: 100%;
         justify-content: center;
-        font-size: 2em;
+        font-size: 1.5rem;
+        color: white;
         margin: 0;
-        }
+}
 
 .btn-marron-fleche {
     width: 100%;
@@ -192,7 +150,7 @@ article h2{
 
 @media (min-width: 768px) {
 
-.contener-pero-btn {
+.container-perso-btn {
     margin-top: 1rem;
 }
 
@@ -494,7 +452,7 @@ letter-spacing: 4px;
     cursor: pointer;
 }
 
-button:hover {
+.buttonContact:hover {
     background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
     transform: translate(0,-3px);
 }
@@ -702,6 +660,12 @@ nav a{
         font-size: 1.5em; 
         color: white;   
     }
+
+nav a:hover {
+    transform: translate(0,-3px);   
+}
+
+
 
     .menu-burger {
         visibility: hidden;
