@@ -209,7 +209,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         LOGO_INDIV.classList.add("logo-competences__indiv");
         const IMG_SKILL = document.createElement("img");
         LOGO_INDIV.appendChild(IMG_SKILL);
-        IMG_SKILL.classList.add("skill-img");
+        IMG_SKILL.classList.add("skill-logo");
         IMG_SKILL.setAttribute("src", `${logo.src}`);
         IMG_SKILL.setAttribute("alt", `${logo.alt}`);
         const H3_SKILL_LOGO = document.createElement("h3");

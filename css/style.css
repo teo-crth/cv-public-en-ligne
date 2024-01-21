@@ -22,6 +22,7 @@ body {font-size: .85em;}
 
 header{
     width: 100%;
+    max-width: 100%;
     position: absolute;
     z-index: 10;
 }
@@ -39,21 +40,6 @@ flex-wrap: wrap;
     border-radius: 4px;
 }
 
-
-.logo-competences__indiv{
-    width: 35%;
-    text-align: center;
-    margin-bottom: 0.5em;
-    padding: 2.5%;
-    gap: 15px;
-}
-
-.skill-section__container-logos{
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
 article h2{
     margin: 1.5rem 1rem;
@@ -141,7 +127,6 @@ article h2{
 
 .img-marron-fleche  {
     opacity: 0.9;
-    width: 70%;
     width: 50%;
     margin-top: 1rem;
 }
@@ -150,49 +135,34 @@ article h2{
 
 @media (min-width: 768px) {
 
-.container-perso-btn {
-    margin-top: 1rem;
-}
-
-.perso-complet{
-    width: 35%;
-}
-
-.titreldp {
-    letter-spacing: 9px;
-    font-size: 5rem;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-}
-
-.titreldp2 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    font-size: 1.5em;
+    .perso-complet{
+        width: 35%;
     }
 
-.btn-marron-fleche {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-}
+    .titreldp {
+        letter-spacing: 9px;
+        font-size: 5rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
 
-.img-marron-fleche  {
-    opacity: 0.9;
-    width: 70%;
-    margin-bottom: 0.7rem;
-}
+    .titreldp2 {
+        font-size: 1.5em;
+        }
 
-.img-marron-fleche:hover {
-    opacity: 1;
-}
+    .btn-marron-fleche {
+        margin-bottom: 2rem;
+    }
+
+    .img-marron-fleche  {
+        opacity: 1;
+        width: 70%;
+        margin-bottom: 0.7rem;
+    }
+
+    .img-marron-fleche:hover {
+        opacity: 1;
+    }
 
 }
 
@@ -320,34 +290,6 @@ letter-spacing: 4px;
     background-color: white;
 }
 
-/** MEDIA QUERIES FORMAT DESKTOP**/
-
-@media (min-width: 768px) {
-
-.nomSpeEdhec {
-    color: #a51f34;
-    letter-spacing: 4px;
-}
-
-.nomSpeInseec {
- color: #092d74;
- letter-spacing: 4px;
-}
-
-.nomSpeBac {
-color: #000000;
-letter-spacing: 4px;
-}
-
-.logo-competences__indiv{
-    width: 18%;
-    text-align: center;
-    margin-bottom: 0.5em;
-    padding: 2.5%;
-    gap: 15px;
-}
-
-}
 
 /*******************************COMPETENCES SECTION*********/
 
@@ -360,11 +302,41 @@ letter-spacing: 4px;
     color: black;
 }
 
-.skill-ection__h3 {
+.skill-section h3 {
     font-size: 1.5em;
     margin-top: 1rem;
 }
 
+.skill-section img {
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.logo-competences__indiv{
+    width: 35%;
+    text-align: center;
+    padding: 2.5%;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.skill-section__container-logos{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/** MEDIA QUERIES FORMAT DESKTOP**/
+
+@media (min-width: 768px) {
+
+    .logo-competences__indiv{
+        width: 18%;
+    }
+    
+    }
 
 /***************CONTACT SECTION*******************/
 .contact-section {
@@ -465,42 +437,33 @@ letter-spacing: 4px;
 
 @media (min-width: 768px) {
     #contact-form label{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: left;
-    margin-top: 12px;
-    font-size: 1.2rem;
+        font-size: 1.2rem;
+    }
 
-}
+    #contact-form legend {
+        font-size: 1.5rem;
+    }
 
-#contact-form legend {
-    font-size: 1.5rem;
-    
-}
+    #contact-form {
+        width:50%;
+    }
 
-#contact-form {
-    width:50%;
-}
+    .champsForm{
+        width: 100%;
+    }
 
-.champsForm{
-    width: 100%;
-    background-color: #eee;
-}
+    .buttonContact{
+        width: 50%;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
 
-.buttonContact{
-    width: 50%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-
-}
-
-#form__button__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #form__button__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*************************************FIN FORM CONTACT********************************/
@@ -626,56 +589,32 @@ nav a{
 
 @media (min-width: 768px){
  
-.menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 50px;;
-}
-
-
-nav{
-    position: absolute;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 1%, rgba(0,212,255,0) 100%);
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;;
     }
 
-nav ul{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+    nav ul{
+            width: 100%;
     }
     
-nav li{
-        list-style-type: none;
-        text-align: center;
-    }
- 
-nav a{
-        font-size: 1.5em; 
-        color: white;   
+    nav a{
+            font-size: 1.5em;   
     }
 
-nav a:hover {
-    transform: translate(0,-3px);   
-}
-
-
+    nav a:hover {
+        transform: translate(0,-3px);   
+    }
 
     .menu-burger {
-        visibility: hidden;
+            visibility: hidden;
     }
 
 }
-
-
-
 /*****************************FIN MENU*********************************/
+
 
 /**BOUTON POUR REMONTER EN HAUT DE LA PAGE**/
 
@@ -683,6 +622,7 @@ nav a:hover {
     display: flex;
     width: 3rem;
     height: 3rem;
+    font-size:2rem;
     background-color: black;
     border-radius: 10rem;
     margin: 1rem;
@@ -716,27 +656,14 @@ nav a:hover {
 
 @media (min-width: 768px){
 .remonter-en-haut {
-    width: 3rem;
-    height: 3rem;
-    font-size:2rem;
-    margin: 1rem;
-    padding-top: 0.5rem;
     top: 80vh;
     right: 3vw;
     opacity: 1;
-
 }
 
 }
 
-/*****************************IMAGE*********************************/
-.skill-img{
-    width: 100%;
-    text-align: center;
-    justify-content: space-evenly;
-}
-/*****************************FIN IMAGE*********************************/
-/*********************BANDEAU COOKIES*****
+/*********************BANDEAU COOKIES
 #bandeau-cookie {
     position: fixed;
     bottom: 0;
@@ -765,12 +692,54 @@ nav a:hover {
 
 #accepter-cookie:hover, #refuser-cookie:hover{
     background-color: #45a049;
-}
+} ****/
 
 /**********FIN BANDEAU COOKIES*********/
 
 
 /** ANIMATION CSS IMPORTATION **/
-@-webkit-keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.animate__pulse{-webkit-animation-name:pulse;animation-name:pulse;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+@-webkit-keyframes pulse{
+    0% {
+        -webkit-transform:scaleX(1);transform:scaleX(1)
+    }
+    
+    50%{
+        -webkit-transform:scale3d(1.05,1.05,1.05);
+        transform:scale3d(1.05,1.05,1.05)
+    }
 
-/** A UTILISER AVEC "animation: pulse;" et "animation-duration: 2s;" site pour retrouver les naimations : https://animate.style/  et feuille de style : https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css  !!PAS BESOIN DE TELECHARGER, JUSTE COPIER COLLER STYLE**/
+    to {
+        -webkit-transform:scaleX(1);
+        transform:scaleX(1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform:scaleX(1);
+        transform:scaleX(1)
+    }
+    
+    50% {
+        -webkit-transform:scale3d(1.05,1.05,1.05);
+        transform:scale3d(1.05,1.05,1.05)
+    }
+    
+    to {
+        -webkit-transform:scaleX(1);
+        transform:scaleX(1)
+    }
+}
+    
+    .animate__pulse {
+        -webkit-animation-name:pulse;
+        animation-name:pulse;
+        -webkit-animation-timing-function:ease-in-out;
+        animation-timing-function:ease-in-out
+    }
+
+/** A UTILISER AVEC "animation: pulse;
+" et "animation-duration: 2s;" 
+site pour retrouver les naimations: https://animate.style/ et 
+feuille de style: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
+!! PAS BESOIN DE TELECHARGER, JUSTE COPIER COLLER STYLE**/
