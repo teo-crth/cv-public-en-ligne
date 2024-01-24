@@ -43,8 +43,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
         
         function scrollToTop() {
-            document.body.scrollTop = 0; // Pour les navigateurs anciens
-            document.documentElement.scrollTop = 0; // Pour les navigateurs modernes
+            document.body.scrollTop = 0;
         }
     },
 
@@ -68,15 +67,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     
 //AGE Evolutif
 
- /*   getAge(date) { 
-        let diff = Date.now() - date.getTime();
-        return Math.abs((new Date(diff).getUTCFullYear() - 1970));
-    } */
-
     Age(date) {
         let diff = Date.now() - date.getTime();
-        console.log(diff);
-       let ageTeo = Math.abs((new Date(diff).getUTCFullYear() - 1970));
+        let ageTeo = Math.abs((new Date(diff).getUTCFullYear() - 1970));
         const H3_HEADER = document.getElementById("h3Header");
         H3_HEADER.innerText = `Développeur web ${ageTeo} ans`; 
     },
@@ -292,10 +285,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     },
 
     init() {
+        this.Age(new Date(1994, 6, 23));
         this.menuHidden();
         this.BurgerMenu();
         this.scrollAction();
-        this.Age(new Date(1994, 6, 23));
         this.moveUpBtn();
         this.cardCreation();
         this.logoCreation();

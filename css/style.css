@@ -155,7 +155,7 @@ article h2{
     }
 
     .img-marron-fleche  {
-        opacity: 1;
+        opacity: 0.9;
         width: 70%;
         margin-bottom: 0.7rem;
     }
@@ -636,7 +636,6 @@ nav a{
     opacity: 0.4;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 .remonter-en-haut p{ 
