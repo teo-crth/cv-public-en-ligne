@@ -144,52 +144,52 @@ window.addEventListener('DOMContentLoaded', (event) => {
     arrayLogo: [
        { 
         logo: "Javascript",
-        src: "../public/img/js_400x400.webp",
+        src: "./img/js_400x400.webp",
         alt: "logo Javascript",
         },
         { 
         logo: "HTML",
-        src: "../public/img/html5_400.webp",
+        src: "./img/html5_400.webp",
         alt: "logo html5",
         },
         { 
         logo: "CSS",
-        src: "../public/img/css_400x400.webp",
+        src: "./img/css_400x400.webp",
         alt: "logo CSS",
         },
         {        
         logo: "Prestashop",
-        src: "../public/img/presta_400.webp",
+        src: "./img/presta_400.webp",
         alt: "logo prestashop",
         },
         {        
             logo: "Wordpress",
-            src: "../public/img/wordpress_400.webp",
+            src: "./img/wordpress_400.webp",
             alt: "logo wordpress",
         },
         {        
             logo: "Search Console",
-            src: "../public/img/searchconsole_400.webp",
+            src: "./img/searchconsole_400.webp",
             alt: "logo search console",
         },
         {        
             logo: "Google tag manager",
-            src: "../public/img/tagmanager_400.webp",
+            src: "./img/tagmanager_400.webp",
             alt: "logo google tag manager",
         },
         {        
             logo: "Google ads",
-            src: "../public/img/gads_400.webp",
+            src: "./img/gads_400.webp",
             alt: "logo google ads",
         },
         {        
             logo: "Google analytics",
-            src: "../public/img/ga_400.webp",
+            src: "./img/ga_400.webp",
             alt: "logo google analytics",
         },
         {        
             logo: "Photoshop",
-            src: "../public/img/psd_400px.webp",
+            src: "./img/psd_400px.webp",
             alt: "logo photoshop",
         },
     ],
@@ -217,7 +217,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     arrayFormation: [
         { 
          date: "2023",
-         logo: "../public/img/logo-oclock.webp",
+         logo: "./img/logo-oclock.webp",
          alt: "logo Formation O'clock",
          title: "Formation Dév Web Fullstack Javascript",
          description: "Titre RNCP niveau 5 (bac+2). 6 mois en formation continue : HTML, CSS, REACT, Node.js, API, SQL.",
@@ -227,7 +227,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
          },
          { 
             date: "2016",
-            logo: "../public/img/inseec.webp",
+            logo: "./img/inseec.webp",
             alt: "logo Inseec",
             title: "Master 2 Marketing Digital",
             description: "Master 2 en marketing digital avec un projet professionnel à construire durant l'année. Et un stage de 6 mois à la Mairie de Bordeaux.",
@@ -237,7 +237,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             },
             { 
                 date: "2012",
-                logo: "../public/img/edheclogo.webp",
+                logo: "./img/edheclogo.webp",
                 alt: "logo Edhec business school",
                 title: "Bachelor Post Bac Marketing",
                 description: "Bachelor en 4 ans avec trois années généralistes (Finance, RH, Marketing, Entreprenariat) & une année spéacialisée en Marketing.",
