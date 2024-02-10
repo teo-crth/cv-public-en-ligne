@@ -383,6 +383,8 @@ letter-spacing: 4px;
 
 #contact-form textarea {
     width: 100%;
+    max-width: 100%;
+    color: white;
 }
 
 
