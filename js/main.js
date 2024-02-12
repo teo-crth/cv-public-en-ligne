@@ -148,6 +148,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
         alt: "logo Javascript",
         },
         { 
+            logo: "NodeJS",
+            src: "./img/nodejs.webp",
+            alt: "logo node.js",
+        },
+        { 
+            logo: "PostgreSQL",
+            src: "./img/postgresql.webp",
+            alt: "logo PostgreSQL",
+        },
+        { 
         logo: "HTML",
         src: "./img/html5_400.webp",
         alt: "logo html5",

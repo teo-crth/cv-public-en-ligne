@@ -379,6 +379,7 @@ letter-spacing: 4px;
 #contact-form input {
     width: 100%;
     border: 1px solid black;
+    color: white;
 }
 
 #contact-form textarea {
