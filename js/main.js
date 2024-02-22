@@ -293,6 +293,30 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
 
     },
+    popupSubmitForm(){
+        const containerPopup = document.getElementById("popup-container-global");
+        const form = document.getElementById("contact-form");
+        const messageP = document.getElementById("__popup-form-message");
+
+        
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            containerPopup.style.display = "flex";
+            const messageChamp = document.querySelector('textarea[name="message"]').value;
+            messageP.innerHTML = `<p><p>Votre message :</p><p>${messageChamp}</p>`;
+
+        }
+        
+        
+    },
+    closePopup(){
+        const popupButton = document.getElementById("__popup-button");
+        const containerPopup = document.getElementById("popup-container-global");
+
+        popupButton.onclick = () => {
+            containerPopup.style.display = "none";
+        }
+    },
 
     init() {
         this.Age(new Date(1994, 6, 23));
@@ -303,6 +327,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         this.cardCreation();
         this.logoCreation();
         this.cookies();
+        this.popupSubmitForm();
+        this.closePopup();
     }
 
 }
