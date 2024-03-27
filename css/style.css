@@ -481,8 +481,7 @@ letter-spacing: 4px;
 
 nav{
     position: absolute;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 1%, rgba(0,212,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(0,212,255,0) 100%);
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -596,7 +595,7 @@ nav a{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        height: 50px;;
+        height: 80px;
     }
 
     nav ul{

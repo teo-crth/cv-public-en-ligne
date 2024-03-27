@@ -206,16 +206,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     logoCreation() {
         for(logo of this.arrayLogo) {
+
         const CONTAINER_LOGOS = document.getElementsByClassName("skill-section__container-logos")[0];
         const LOGO_INDIV = document.createElement("div");
+        const IMG_SKILL = document.createElement("img");
+        const H3_SKILL_LOGO = document.createElement("h3");
+        
         CONTAINER_LOGOS.appendChild(LOGO_INDIV);
         LOGO_INDIV.classList.add("logo-competences__indiv");
-        const IMG_SKILL = document.createElement("img");
+       
         LOGO_INDIV.appendChild(IMG_SKILL);
         IMG_SKILL.classList.add("skill-logo");
         IMG_SKILL.setAttribute("src", `${logo.src}`);
         IMG_SKILL.setAttribute("alt", `${logo.alt}`);
-        const H3_SKILL_LOGO = document.createElement("h3");
+        
         LOGO_INDIV.appendChild(H3_SKILL_LOGO);
         H3_SKILL_LOGO.textContent = `${logo.logo}`;
         H3_SKILL_LOGO.classList.add("skill-ection__h3");
