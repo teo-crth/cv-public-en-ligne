@@ -239,16 +239,19 @@ div.container-allcards {
 .nomSpeOclock {
     color: #0ac3a7;
     letter-spacing: 4px;
+    text-shadow: #01574a 1px 1px;
 }
 
 .nomSpeEdhec {
     color: #a51f34;
     letter-spacing: 4px;
+    text-shadow: #55010e 1px 1px;
 }
 
 .nomSpeInseec {
  color: #092d74;
  letter-spacing: 4px;
+ text-shadow: black 1px 1px;
 }
 
 .nomSpeBac {
