@@ -33,18 +33,28 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     },
 
+    scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Pour un défilement fluide
+        });
+    },
+
     moveUpBtn() {
+
+        const scrollToTop = this.scrollToTop;
+
         document.getElementById("up").addEventListener("click", function() {
             scrollToTop();
         });
+
+        document.getElementById("up").onclick = () => {
+            scrollToTop();
+        };
         
         document.getElementById("up").addEventListener("touchend", function() {
             scrollToTop();
         });
-        
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-        }
     },
 
 
