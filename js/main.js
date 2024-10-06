@@ -88,8 +88,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     Age(date) {
         let diff = Date.now() - date.getTime();
         let ageTeo = Math.abs((new Date(diff).getUTCFullYear() - 1970));
-        const H3_HEADER = document.getElementById("h3Header");
-        H3_HEADER.innerText = `Développeur web ${ageTeo} ans`; 
+        const textAge = document.getElementById("age");
+        textAge.innerText = `${ageTeo} ans`; 
     },
 
 
@@ -169,6 +169,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
             logo: "NodeJS",
             src: "./img/nodejs.webp",
             alt: "logo node.js",
+        },
+        { 
+            logo: "React",
+            src: "./img/react.webp",
+            alt: "logo react",
         },
         { 
             logo: "PostgreSQL",

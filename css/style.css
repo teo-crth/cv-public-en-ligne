@@ -102,17 +102,16 @@ article h2{
     text-align: center;
     width: 100%;
     justify-content: center;
-    font-size: 1.2em;
     margin: 0;
 }
 
-#h3Header {
+#h3Header, #age {
         display: flex;
         align-items: center;
         text-align: center;
         width: 100%;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: white;
         margin: 0;
 }
@@ -123,6 +122,7 @@ article h2{
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .img-marron-fleche  {
@@ -152,6 +152,7 @@ article h2{
 
     .btn-marron-fleche {
         margin-bottom: 2rem;
+        display: none;
     }
 
     .img-marron-fleche  {
