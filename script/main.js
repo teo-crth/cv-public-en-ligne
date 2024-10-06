@@ -1,7 +1,7 @@
 // déclencher le javascript une fois que le DOM est chargé
 window.addEventListener('DOMContentLoaded', (event) => {
 
-    const APP = {
+const APP = {
 
 // STICKY MENU ----------------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     scrollToTop() {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // Pour un défilement fluide
+            behavior: 'smooth'
         });
     },
 
@@ -72,14 +72,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         CLOSE_BTN.onclick = function () {
             SIDENAV.classList.remove("active");
         };
-
-        // Fermer le menu burger en cliquant en dehors de la sidenav
-        document.addEventListener('click', (event) => {
-            // Vérifiez si le clic est en dehors de la sidenav
-            if (!SIDENAV.contains(event.target) && !OPEN_BTN.contains(event.target)) {
-                SIDENAV.classList.remove("active");
-            }
-        });
 
     },
     
@@ -358,3 +350,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
 APP.init();
 
 });
+
+export default APP;
