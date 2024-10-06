@@ -315,21 +315,32 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
 
     },
-    popupSubmitForm(){
-        const containerPopup = document.getElementById("popup-container-global");
+
+    contactForm() {
+        emailjs.init("vvGiymJO3abY9ymFB"); // Remplacez par votre clé publique
+
         const form = document.getElementById("contact-form");
-        const messageP = document.getElementById("__popup-form-message");
+        const messageP = document.getElementsByClassName("__popup-title");
+        const messagep2 = document.getElementsByClassName("__popup-subtitle");
+        const containerPopup = document.getElementById("popup-container-global");
 
-        
         form.onsubmit = (e) => {
-            e.preventDefault();
-            containerPopup.style.display = "flex";
-            const messageChamp = document.querySelector('textarea[name="message"]').value;
-            messageP.innerHTML = `<p><p>Votre message :</p><p>${messageChamp}</p>`;
-
+            e.preventDefault(); // Empêche le rechargement de la page
+            
+            emailjs.sendForm('service_64uhp8c', 'template_80p8ukb', form)
+                .then((result) => {
+                    console.log('Email envoyé avec succès!', result.text);
+                    messageP.innerHTML = `Message envoyé !`;
+                    messagep2.innerHTML = `Merci pour votre message, nous vous répondrons dès que possible.`;
+                    containerPopup.style.display = "flex"; // Afficher la popup
+                    form.reset(); // Réinitialiser le formulaire
+                }, (error) => {
+                    console.log('Erreur lors de l\'envoi:', error.text);
+                    messageP.innerHTML = `Une erreur est survenue. Veuillez réessayer.`;
+                    messagep2.innerHTML = `Si le problème persiste, merci de nous contacter directement à l'adresse suivante : teoconrath@gmail.com`
+                    containerPopup.style.display = "flex"; // Afficher la popup
+                });
         }
-        
-        
     },
     closePopup(){
         const popupButton = document.getElementById("__popup-button");
@@ -349,7 +360,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         this.cardCreation();
         this.logoCreation();
         this.cookies();
-        this.popupSubmitForm();
+        this.contactForm();
         this.closePopup();
     }
 
