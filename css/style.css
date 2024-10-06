@@ -148,7 +148,17 @@ article h2{
 
     .titreldp2 {
         font-size: 1.5em;
-        }
+    }
+
+    .sidenav ul, li {
+        margin-top: 2rem;
+    }
+
+    .sidenav li:hover {
+        text-decoration: underline;
+        color: white;
+        background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    }
 
     .btn-marron-fleche {
         margin-bottom: 2rem;
