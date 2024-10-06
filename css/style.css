@@ -142,7 +142,7 @@ article h2{
     .titreldp {
         letter-spacing: 9px;
         font-size: 5rem;
-        margin-top: 4rem;
+        padding-top: 0.5rem;
         margin-bottom: 1rem;
     }
 
@@ -475,49 +475,6 @@ letter-spacing: 4px;
 
 /*************************************FIN FORM CONTACT********************************/
 
-
-/*****************************MENU*********************************/
-
-.menu {
-    width: 100%;
-    display: none;
-}
-
-nav{
-    position: absolute;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(0,212,255,0) 100%);
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 150px;
-    }
-
-nav ul{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav li{
-    list-style-type: none;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-}
-
-nav a{
-    display:block;
-    color:white;
-    font-weight: bold;
-    width: 100%;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 2em;
-    letter-spacing: 2px;
-}
-
 /** MENU BURGER **/
 
 .menu-burger {
@@ -588,40 +545,7 @@ nav a{
     box-shadow: 0rem 0.01rem 0.5rem black;
   }
   
-
-
-
 /** MEDIA QUERIES FORMAT DESKTOP**/
-
-
-@media (min-width: 768px){
- 
-    .menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 80px;
-    }
-
-    nav ul{
-            width: 100%;
-    }
-    
-    nav a{
-            font-size: 1.5em;   
-    }
-
-    nav a:hover {
-        transform: translate(0,-3px);   
-    }
-
-    .menu-burger {
-            visibility: hidden;
-    }
-
-}
-/*****************************FIN MENU*********************************/
-
 
 /**BOUTON POUR REMONTER EN HAUT DE LA PAGE**/
 
