@@ -176,6 +176,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
             alt: "logo react",
         },
         { 
+            logo: "Typescript",
+            src: "./img/Typescript.webp",
+            alt: "logo typescript",
+        },
+        { 
             logo: "PostgreSQL",
             src: "./img/postgresql.webp",
             alt: "logo PostgreSQL",
