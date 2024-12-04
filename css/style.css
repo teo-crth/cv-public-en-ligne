@@ -107,6 +107,10 @@ article h2{
 
 }
 
+#city-title {
+    color: white;
+}
+
 #h3Header {
     width: 100%;    
 }
@@ -201,7 +205,6 @@ article h2{
     .sidenav li:hover {
         text-decoration: underline;
         color: white;
-        background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
     }
 
     .btn-marron-fleche {
@@ -547,59 +550,69 @@ letter-spacing: 4px;
     background-color: rgba(0, 0, 0, 0.9);
     padding-top: 60px;
     transition: left 0.5s ease;
-  }
+}
   
-  /* Sidenav menu links */
-  .sidenav a {
-    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: white;
-  }
-  
-  .sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 2rem;
-  }
-  
-  /* Active class */
-  .sidenav.active {
-    left: 0;
-  }
-  
-  /* Close btn */
-  .sidenav .close {
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    top: 1rem;
-    left: 1rem;
-    font-size: 2rem;
-    background-color: white;
-    border-radius: 15rem;
-    border: none;
-    font-weight: bold;
-  }
-  
-  /* Icône burger */
-  .burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    border-radius: 0.5rem;
-    box-shadow: 0rem 0.01rem 0.5rem black;
-  }
-  
-/** MEDIA QUERIES FORMAT DESKTOP**/
+/* Sidenav menu links */
+.sidenav a {
+padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+text-decoration: none;
+font-size: 1.5rem;
+color: white;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: white;
+}
+
+.sidenav ul {
+list-style-type: none;
+padding: 0;
+margin-top: 2rem;
+}
+
+/* Active class */
+.sidenav.active {
+left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+position: absolute;
+width: 3rem;
+height: 3rem;
+top: 1rem;
+left: 1rem;
+font-size: 1.8rem;
+background-color: white;
+border-radius: 15rem;
+border: none;
+font-weight: bold;
+cursor: pointer;
+}
+
+.close:hover {
+background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+border: 3px solid white;
+color: white;
+}
+
+/* Icône burger */
+#openBtn {
+display: flex;
+width: 34px;
+}
+
+.burger-icon span {
+display: block;
+width: 35px;
+height: 5px;
+background-color: white;
+margin: 6px 0;
+border-radius: 0.5rem;
+box-shadow: 0rem 0.01rem 0.5rem black;
+}
 
 /**BOUTON POUR REMONTER EN HAUT DE LA PAGE**/
 
