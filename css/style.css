@@ -650,6 +650,24 @@ box-shadow: 0rem 0.01rem 0.5rem black;
     visibility: hidden;
 }
 
+footer {
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-footer img {
+    width: 20%;
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
 
 @media (min-width: 768px){
 .remonter-en-haut {
