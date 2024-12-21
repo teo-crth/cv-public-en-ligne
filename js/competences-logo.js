@@ -43,6 +43,16 @@ const arrayLogo =
         src: "./img/css_400x400.webp",
         alt: "logo CSS",
         },
+        { 
+            logo: "Jira",
+            src: "./img/jira_logo.webp",
+            alt: "logo Jira",
+        },
+        {        
+            logo: "Git & Github",
+            src: "./img/github-logo.webp",
+            alt: "logo github",
+        },
         {        
         logo: "Prestashop",
         src: "./img/presta_400.webp",
@@ -57,11 +67,6 @@ const arrayLogo =
             logo: "Search Console",
             src: "./img/searchconsole_400.webp",
             alt: "logo search console",
-        },
-        {        
-            logo: "Google tag manager",
-            src: "./img/tagmanager_400.webp",
-            alt: "logo google tag manager",
         },
         {        
             logo: "Google ads",
