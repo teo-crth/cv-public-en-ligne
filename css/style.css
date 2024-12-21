@@ -388,6 +388,19 @@ letter-spacing: 4px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}  
+
+/* Animation pour agrandir et faire apparaître les logos */
+.logo-competences__indiv {
+    opacity: 0; /* Cache les logos initialement */
+    transform: scale(0); /* Réduit la taille à zéro */
+    transition: opacity 1s ease, transform 1s ease; /* Effet de transition */
+}
+
+/* Quand la classe "visible" est ajoutée, les logos s'affichent et s'agrandissent */
+.logo-competences__indiv.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /** MEDIA QUERIES FORMAT DESKTOP**/

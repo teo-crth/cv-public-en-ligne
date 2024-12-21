@@ -100,6 +100,7 @@ const logoCreation = () => {
         IMG_SKILL.classList.add("skill-logo");
         IMG_SKILL.setAttribute("src", `${logo.src}`);
         IMG_SKILL.setAttribute("alt", `${logo.alt}`);
+        IMG_SKILL.setAttribute("lazy", `loading`);
         
         LOGO_INDIV.appendChild(H3_SKILL_LOGO);
         H3_SKILL_LOGO.textContent = `${logo.logo}`;
