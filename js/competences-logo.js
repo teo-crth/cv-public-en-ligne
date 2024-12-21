@@ -29,6 +29,11 @@ const arrayLogo =
             alt: "logo PostgreSQL",
         },
         { 
+            logo: "Tailwind",
+            src: "./img/tailwind.webp",
+            alt: "logo tailwind",
+            },
+        { 
         logo: "HTML",
         src: "./img/html5_400.webp",
         alt: "logo html5",

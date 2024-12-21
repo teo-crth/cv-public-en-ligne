@@ -372,6 +372,7 @@ letter-spacing: 4px;
     width: 100%;
     text-align: center;
     justify-content: space-evenly;
+    border-radius: 10px
 }
 
 .logo-competences__indiv{
