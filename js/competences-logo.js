@@ -19,6 +19,11 @@ const arrayLogo =
             alt: "logo react",
         },
         { 
+            logo: "Angular",
+            src: "./img/angular_logo.webp",
+            alt: "logo angular",
+        },
+        { 
             logo: "Typescript",
             src: "./img/Typescript.webp",
             alt: "logo typescript",
