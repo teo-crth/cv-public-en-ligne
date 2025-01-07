@@ -24,6 +24,11 @@ const arrayLogo =
             alt: "logo angular",
         },
         { 
+            logo: "Next JS",
+            src: "./img/nextJS-logo.webp",
+            alt: "logo nextjs",
+        },
+        { 
             logo: "Typescript",
             src: "./img/Typescript.webp",
             alt: "logo typescript",
