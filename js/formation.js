@@ -1,11 +1,21 @@
 const arrayFormation = [
     { 
+        date: "2024",
+        logo: "./img/wild.webp",
+        alt: "logo Wild code School",
+        title: "Formation React.js",
+        description: "Formation avancée Développeur Javascript React destinée aux professionnels ou personnes en reconversion qui souhaitent continuer leur montée en compétence dans le développement.",
+        classDiv: "cart-0",
+        classH2: "nomSpeWild",
+        id: "logo-wild"
+    },
+    { 
      date: "2023",
      logo: "./img/logo-oclock.webp",
      alt: "logo Formation O'clock",
      title: "Formation Dév Web Fullstack Javascript",
      description: "Titre RNCP niveau 5 (bac+2). 6 mois en formation continue : HTML, CSS, REACT, Node.js, API, SQL.",
-     classDiv: "cart-0",
+     classDiv: "cart-1",
      classH2: "nomSpeOclock",
      id: "logo-oclock"
     },
@@ -15,19 +25,9 @@ const arrayFormation = [
         alt: "logo Inseec",
         title: "Master 2 Marketing Digital",
         description: "Master 2 en marketing digital avec un projet professionnel à construire durant l'année. Et un stage de 6 mois à la Mairie de Bordeaux.",
-        classDiv: "cart-1",
+        classDiv: "cart-2",
         classH2: "nomSpeInseec",
         id: "logo-inseec"
-    },
-    { 
-        date: "2012",
-        logo: "./img/edheclogo.webp",
-        alt: "logo Edhec business school",
-        title: "Bachelor Post Bac Marketing",
-        description: "Bachelor en 4 ans avec trois années généralistes (Finance, RH, Marketing, Entreprenariat) & une année spéacialisée en Marketing.",
-        classDiv: "cart-2",
-        classH2: "nomSpeEdhec",
-        id: "logo-edhec"
     }
 ]
 
