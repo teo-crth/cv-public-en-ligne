@@ -3,7 +3,8 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Découvrez mon CV en ligne et contactez moi pour toute opportunité concernant le développement">
+        <meta name="description"
+            content="Découvrez mon CV en ligne et contactez moi pour toute opportunité concernant le développement">
         <meta name="author" content="Téo Conrath">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
@@ -23,8 +24,9 @@
         <script src="./js/sectionProjects.js" defer></script>
         <title>CV en Ligne Téo Conrath - Développeur Web FullStack Javascript</title>
     </head>
+
     <body>
-    
+
         <header>
             <!--MENU BURGER -->
             <div class="menu-burger">
@@ -36,7 +38,7 @@
                         <li><a href="#contact" aria-label="Aller à la section contact du site">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <a href="#" id="openBtn" aria-label="Ouvrir le menu">
                     <span class="burger-icon">
                         <span></span>
@@ -51,19 +53,25 @@
                 <div class="titreldp">
                     <h1 class="cv-title">CV EN LIGNE</h1>
                 </div>
-                <div class="titreldp2">  
+                <div class="titreldp2">
                     <h2 id="h2Header">Téo Conrath</h2>
                 </div>
                 <div class="titreldp2">
                     <h3 id="h3Header">Développeur Web</h3>
                     <h3 class="typing-h3"><span id="titreldp2-subtitle"></span><span id="cursor">|</span></h3>
                 </div>
-                <div class="titreldp2"><h4 id="city-title">Aix-en-Provence</h4></div>
-                <div class="titreldp2"><h4 id="age"></h4></div>
+                <div class="titreldp2">
+                    <h4 id="city-title">Aix-en-Provence</h4>
+                </div>
+                <div class="titreldp2">
+                    <h4 id="age"></h4>
+                </div>
                 <div class="container-perso-btn">
-                    <img class="perso-complet" src="./img/perso-complet2.svg" alt="personnage dessiné tenant une plante et souriant">
+                    <img class="perso-complet" src="./img/perso-complet2.svg"
+                        alt="personnage dessiné tenant une plante et souriant">
                     <div class="btn-marron-fleche">
-                        <a href="#formation" aria-label="Aller à la section formation du site"><img src="./img/cercle_et_fleche.png" alt="cercle avec flèche" class="img-marron-fleche"></a>
+                        <a href="#formation" aria-label="Aller à la section formation du site"><img
+                                src="./img/cercle_et_fleche.png" alt="cercle avec flèche" class="img-marron-fleche"></a>
                     </div>
                 </div>
             </section>
@@ -71,49 +79,80 @@
                 <h2 class="section__h2">Réalisations</h2>
                 <!-- Cards -->
                 <div class="cardsProject-container" id="cards-container">
-                    <!-- Cards will be injected here by JavaScript -->
+                    <div class="description">
+                        <div class="logos-container">
+                            <div>
+                                <a href="https://opandco.fr" target="_blank" class="link">
+                                    <img src="/img/opandco.png">
+                                </a>
+                            </div>
+                            <a href="https://opandco.fr" target="_blank" class="link">
+                                <h4 class="title">Op&Co, création de site web</h4>
+                            </a>
+                            <p class="description-text">
+                                Création d'un site pour une correctrice professionnelle. Le site est
+                                réalisé avec le CMS WordPress. Le site est responsive et optimisé pour le référencement
+                                naturel (SEO).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-video">
+                        <div class="window">
+                            <div class="window-header">
+                                <div class="circle close"></div>
+                                <div class="circle minimize"></div>
+                                <div class="circle maximize"></div>
+                            </div>
+                            <div class="content"><img src="../img/feuillescanopee.webp" class="visible"
+                                    id="image-windowProject1"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!--Section formation-->
             <section class="formation-section">
                 <h2 class="section__h2" id="formation">formations</h2>
-                <div class="container-allcards"> 
-                  <!--Génération de toutes les cartes avec js--> 
-                </div> 
-            </section> 
+                <div class="container-allcards">
+                    <!--Génération de toutes les cartes avec js-->
+                </div>
+            </section>
             <!--Section competences-->
             <section class="skill-section">
                 <h2 class="section__h2" id="competences">savoir faire</h2>
                 <div class="skill-section__container-logos">
                     <!--Génération de toutes les logo avec js-->
                 </div>
-            </section>   
+            </section>
             <!--SECTION contact-->
             <section class="contact-section">
-                    <h2 class="section__h2" id="contact">Contact</h2>
-                    <form id="contact-form">
-                        <fieldset class="borderRadius4">
-                            <legend>Renseigner les informations</legend>
-                            <div>
-                                 <label for="nom">*Nom & Prénom :</label>  
-                                 <input type="text" name="nom" id="nom" placeholder="Paul Martin" class="champsForm" required>
-                            </div>
-                            <div>
-                                 <label for="email">*Email :</label>  
-                                 <input type="email" name="email" id="email" placeholder="paul.martin@gmail.com" class="champsForm" required>
-                            </div>
-                            <div>
-                                 <label for="message">Message :</label>    
-                                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Ecrivez votre message ici" class="champsForm"></textarea>
-                            </div>
-                            <div id="form__button__container">
-                                 <button type="submit" name="Envoyer" id="submit" class="buttonContact">Envoyer</button>
-                            </div>
-                        </fieldset>
-                    </form>        
+                <h2 class="section__h2" id="contact">Contact</h2>
+                <form id="contact-form">
+                    <fieldset class="borderRadius4">
+                        <legend>Renseigner les informations</legend>
+                        <div>
+                            <label for="nom">*Nom & Prénom :</label>
+                            <input type="text" name="nom" id="nom" placeholder="Paul Martin" class="champsForm" required>
+                        </div>
+                        <div>
+                            <label for="email">*Email :</label>
+                            <input type="email" name="email" id="email" placeholder="paul.martin@gmail.com"
+                                class="champsForm" required>
+                        </div>
+                        <div>
+                            <label for="message">Message :</label>
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Ecrivez votre message ici"
+                                class="champsForm"></textarea>
+                        </div>
+                        <div id="form__button__container">
+                            <button type="submit" name="Envoyer" id="submit" class="buttonContact">Envoyer</button>
+                        </div>
+                    </fieldset>
+                </form>
             </section>
-            <a href="#navbar" aria-label="Remonter tout en haut de la page" class="remonter-en-haut btn-hidden" id="up"><p>^</p></a>
-            
+            <a href="#navbar" aria-label="Remonter tout en haut de la page" class="remonter-en-haut btn-hidden" id="up">
+                <p>^</p>
+            </a>
+
             <!-- POPUP ENVOIE DU FORMULAIRE -->
             <div class="containerOfContainer-popup" id="popup-container-global">
                 <div class="container-popup">
@@ -123,7 +162,9 @@
             </div>
         </main>
         <footer>
-            <div class="container-footer"><a href="https://github.com/teo-crth"><img src="img/Logo-GitHub-Black.webp" alt="icone de github"></a></div>
+            <div class="container-footer"><a href="https://github.com/teo-crth"><img src="img/Logo-GitHub-Black.webp"
+                        alt="icone de github"></a></div>
         </footer>
     </body>
+
 </html>
