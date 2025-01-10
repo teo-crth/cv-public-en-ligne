@@ -35,39 +35,37 @@ h3.text-medium {
     width: 70%;
 }
 
-.logos-container div img {
-    width: 50px;
-    border: 1px solid black;
-    border-radius: 50px;
-    cursor: pointer;
-
-}
-
-
-.cardProject .description {
+.logo-container{
+    width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    height: 100%;
-    width: 50%;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
 }
 
-.cardProject .container-video {
+.description-text {
+    width: 90%;
+}
+
+.logo-container div img {
+    width: 150px;
+}
+
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.container-window {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 50%;
+    width: 90%;
 }
 
-.cardProject .date {
-    font-size: 0.75rem;
-    opacity: 0.5;
-    margin-bottom: 0.25rem;
-}
-
-.cardProject .title {
+.title {
     font-size: 1rem;
     font-weight: 500;
     list-style: none;
@@ -76,7 +74,7 @@ h3.text-medium {
     cursor: pointer;
 }
 
-.cardProject .link {
+.link {
     list-style: none;
     list-style-type: none;
     text-decoration: none;
@@ -88,34 +86,9 @@ h3.text-medium {
     gap: 5px;
 }
 
-.cardProject .description p {
+.description p {
     font-size: 0.875rem;
     margin-top: 0.5rem;
-}
-
-.cardProject .logos {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.cardProject .logo img {
-    width: 28px; /* par défaut pour les petites logos */
-    transition: width 0.3s ease;
-}
-
-.cardProject .mockup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-    max-width: 650px;
-    min-width: 350px;
-    position: absolute;
-    margin-top: 3rem;
-}
-
-.cardProject.video {
-    object-fit: cover;
 }
 
 /* Fenêtre de navigateur principale */
@@ -127,8 +100,6 @@ h3.text-medium {
     background: rgba(255, 255, 255, 0.8); /* Fenêtre semi-transparente */
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    /* position: relative; */
-    /* transform: perspective(1000px) rotateX(10deg) rotateY(-10deg); Perspective 3D */
     overflow: hidden;
 }
 
@@ -210,6 +181,39 @@ h3.text-medium {
     }
 }
 
+.container-projet {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.labels-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.tech-labels {
+    background-color: black;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 
 @media (min-width: 768px) {
     .cardProject {
