@@ -289,9 +289,7 @@ div.container-allcards {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    gap: 15px;
-    margin-top: 50px;
-    
+    gap: 15px;    
 }
 
 .nomSpeOclock {
@@ -357,6 +355,10 @@ letter-spacing: 4px;
 .skill-section {
     width: 100%;
     background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill-section .section__h2 {
@@ -410,8 +412,12 @@ letter-spacing: 4px;
     .logo-competences__indiv{
         width: 18%;
     }
+
+    .skill-section__container-logos{
+        width: 80%;
     
     }
+}
 
 /***************CONTACT SECTION*******************/
 .contact-section {
