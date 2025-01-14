@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     const cardOpAndCo = {
-        siteImages: ['../img/captures-sites/op-1.png', '../img/captures-sites/op-2.png', '../img/captures-sites/op-3.png', '../img/captures-sites/op-4.png'],
-        siteImagesMobile: ['../img/captures-sites/op-1-mobile.png', '../img/captures-sites/op-service-mobile.png', '../img/captures-sites/op-faq-mobile.png', '../img/captures-sites/op-suisje-mobile.png', '../img/captures-sites/op-tarifaccueil-mobile.png'],
+        siteImages: ['/img/captures-sites/op-1.png', '/img/captures-sites/op-2.png', '/img/captures-sites/op-3.png', '/img/captures-sites/op-4.png'],
+        siteImagesMobile: ['/img/captures-sites/op-1-mobile.png', '/img/captures-sites/op-service-mobile.png', '/img/captures-sites/op-faq-mobile.png', '/img/captures-sites/op-suisje-mobile.png', '/img/captures-sites/op-tarifaccueil-mobile.png'],
     };
 
     const cardAuDetourDesMots = {
-        siteImages: ['../img/captures-sites/addm-accueil.png', '../img/captures-sites/addm-accueil-2.png', '../img/captures-sites/addm-search.png', '../img/captures-sites/addm-bookPage.png','../img/captures-sites/addm-search-dark.png', '../img/captures-sites/addm-accueil1-dark.png', '../img/captures-sites/addm-bookPage-dark.png'],
-        siteImagesMobile: ['../img/captures-sites/addm-accueil-1-mobile.png', '../img/captures-sites/addm-search-mobile.png', '../img/captures-sites/addm-search-2-mobile.png', '../img/captures-sites/addm-menu-mobile.png', '../img/captures-sites/addm-bookPage-mobile.png', '../img/captures-sites/addm-bookPage-dark-mobile.png', '../img/captures-sites/addm-search-dark-mobile.png', '../img/captures-sites/addm-search-2-dark-mobile.png'],
+        siteImages: ['/img/captures-sites/addm-accueil.png', '/img/captures-sites/addm-accueil-2.png', '/img/captures-sites/addm-search.png', '/img/captures-sites/addm-bookPage.png','/img/captures-sites/addm-search-dark.png', '/img/captures-sites/addm-accueil1-dark.png', '/img/captures-sites/addm-bookPage-dark.png'],
+        siteImagesMobile: ['/img/captures-sites/addm-accueil-1-mobile.png', '/img/captures-sites/addm-search-mobile.png', '/img/captures-sites/addm-search-2-mobile.png', '/img/captures-sites/addm-menu-mobile.png', '/img/captures-sites/addm-bookPage-mobile.png', '/img/captures-sites/addm-bookPage-dark-mobile.png', '/img/captures-sites/addm-search-dark-mobile.png', '/img/captures-sites/addm-search-2-dark-mobile.png'],
     };
 
     const ImageWindowOpandCo = document.querySelector('#image-windowProject1');
