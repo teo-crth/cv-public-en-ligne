@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Réinitialiser l'animation et appliquer l'animation d'arrivée
                 projetImageElem.style.animation = '';  // Réinitialiser l'animation
                 projetImageElem.style.animation = 'slideRightToLeft 1s forwards';
-            }, 1000);  // Attendre la fin de l'animation précédente avant de changer l'image
-        }, 7000);  // Changer l'image toutes les 7 secondes
+            }, 500);  // Attendre la fin de l'animation précédente avant de changer l'image
+        }, 6000);  // Changer l'image toutes les 7 secondes
     }
 
     // Utiliser la fonction générique pour chaque projet

@@ -196,11 +196,12 @@ h3.text-medium {
     width: 95%;
     border-radius: 10px;
     padding: 1rem;
+    position: relative;
 }
 
 .labels-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -220,6 +221,22 @@ h3.text-medium {
     letter-spacing: 1px;
 }
 
+.container-logo-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+
+.logo-github {
+    width: 30px;
+    height: 30px;
+}
+
+
+
 @media (min-width: 768px) {
     .window {
         width: 600px;
@@ -227,6 +244,10 @@ h3.text-medium {
     }
     
     .cardProject {
+        flex-direction: row;
+    }
+
+    .labels-container {
         flex-direction: row;
     }
 
