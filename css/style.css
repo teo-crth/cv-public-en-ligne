@@ -649,6 +649,7 @@ box-shadow: 0rem 0.01rem 0.5rem black;
     padding-top: 0.5rem;
     border: 0.02rem solid white;
     position: fixed;
+    z-index: 50;
     top: 85vh;
     right: 1vw;
     opacity: 0.4;
@@ -663,6 +664,7 @@ box-shadow: 0rem 0.01rem 0.5rem black;
     color: white;
     align-items: center;
     justify-content: center;
+    z-index: 50;
     margin: auto auto;
 }
 
