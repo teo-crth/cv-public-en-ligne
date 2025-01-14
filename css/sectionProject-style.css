@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+.link-window {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 h3.text-medium {
     font-weight: 300;
     margin: 1rem; /* à adapter selon la variable ou la valeur */
@@ -15,7 +20,7 @@ h3.text-medium {
 .cardsProject-container {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     width: 100%;
@@ -95,8 +100,8 @@ h3.text-medium {
 
 /* Fenêtre principale */
 .window {
-    width: 500px;
-    height: 550px;
+    width: 275px;
+    height: 580px;
     background: rgba(255, 255, 255, 0.8); /* Fenêtre semi-transparente */
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -130,13 +135,13 @@ h3.text-medium {
     background-color: rgba(231, 231, 231, 0.8);
 }
 
-/* Contenu vidéo */
+/* Contenu image */
 .content {
     width: 100%;
     height: calc(100% - 30px); /* Laisser de la place pour l'en-tête */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     background: rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
