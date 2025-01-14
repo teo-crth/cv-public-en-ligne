@@ -351,6 +351,10 @@ letter-spacing: 4px;
 
 
 /*******************************COMPETENCES SECTION*********/
+.work-section {
+    background-color: #F0F0F0;
+}
+
 
 .skill-section {
     width: 100%;
